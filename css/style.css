@@ -27,6 +27,7 @@ html {
 
 body {
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 /*********************/
@@ -68,12 +69,15 @@ body {
 .header-primary {
   font-size: 6.4rem;
   margin-bottom: 4rem;
+  font-weight: 700;
+  color: #212529;
 }
 
 .header-description {
   font-size: 2.2rem;
   line-height: 1.1;
   padding-right: 15rem;
+  color: #495057;
 }
 
 .form-box {
@@ -82,10 +86,12 @@ body {
   backdrop-filter: blur(15px);
   padding: 3rem 10rem;
   border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 .form-title {
   margin-bottom: 3rem;
+  color: #212529;
 }
 .title {
   font-size: 2.8rem;
@@ -93,8 +99,49 @@ body {
 
 .inputs {
   display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.group-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+label {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  color: #495057;
+}
+
+input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  outline: none;
 }
 
 .btn-cta {
   width: 100%;
+  outline: none;
+  padding: 1rem 3rem;
+  border-radius: 9px;
+  border: none;
+  background-color: hsla(227, 100%, 50%, 0.464);
+  color: #eee;
+
+  font-size: 1.8rem;
+
+  cursor: pointer;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
