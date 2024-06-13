@@ -81,7 +81,7 @@ body {
 }
 
 .form-box {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(135, 48, 223, 0.2);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(15px);
   padding: 3rem 10rem;
@@ -144,4 +144,23 @@ input:focus {
 
   cursor: pointer;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+/*****ABOUT*/
+
+.section-about {
+  padding: 9rem 15rem;
+}
+
+.about-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+}
+
+.image-box {
+  border-radius: 9px;
+  overflow: hidden;
+}
+.about-img {
+  width: 100%;
 }
