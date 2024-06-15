@@ -37,14 +37,27 @@
             <div class="inputs">
               <div class="group-form">
                 <label for="weight" class="label-details">Weight</label>
-                <input id="weight" class="weight-input" placeholder="kg" />
+                <input
+                  type="text"
+                  id="weight"
+                  class="weight-input"
+                  placeholder="kg"
+                />
               </div>
               <div class="group-form">
                 <label for="height" class="label-details">Height</label>
-                <input id="height" class="weight-input" placeholder="cm" />
+                <input
+                  type="text"
+                  id="height"
+                  class="weight-input"
+                  placeholder="cm"
+                />
               </div>
             </div>
-            <button class="btn-cta">Calculate</button>
+            <button type="button" id="btn-bmi" class="btn-cta">
+              Calculate
+            </button>
+            <p id="bmi-result" class="bmi-result"></p>
           </form>
         </div>
       </section>
@@ -52,21 +65,93 @@
         <div class="about-box">
           <div class="image-box">
             <img
-            class="about-img"
+              class="about-img"
               src="./images/pexels-mastercowley-1153372.jpg"
               alt="Girl eating"
             />
           </div>
           <div class="text-box">
-            <h1 class="header-primary">What your BMI result means</h1>
+            <h1 class="header-primary prim-line">What your BMI result means</h1>
             <p class="header-description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt aut
               dolorem quis quod molestiae eius corporis. Voluptate debitis
               atque, vero sequi hic error odit aperiam aliquam omnis ipsa libero
               harum?
             </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-details">
+        <div class="container-details">
+          <div class="cards">
+            <div class="card">
+              <img
+                class="card-icon food-icon"
+                src="./images/food-svgrepo-com.svg"
+              />
+              <h3 class="heading-tertiary">Healthy eating</h3>
+              <p class="card-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Veritatis natus id iusto incidunt expedita atque quod a
+                cupiditate quas ea dignissimos minus excepturi
+              </p>
+            </div>
+            <div class="card">
+              <img
+                class="card-icon dumbbell-icon"
+                src="./images/dumbbell-8-svgrepo-com.svg"
+              />
+              <h3 class="heading-tertiary">Regular excersise</h3>
+              <p class="card-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Veritatis natus id iusto incidunt expedita atque quod a
+                cupiditate quas ea dignissimos minus excepturi
+              </p>
+            </div>
+            <div class="card">
+              <img
+                class="card-icon sleep-icon"
+                src="./images/sleep-svgrepo-com.svg"
+              />
+              <h3 class="heading-tertiary">Adequate sleep</h3>
+              <p class="card-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Veritatis natus id iusto incidunt expedita atque quod a
+                cupiditate quas ea dignissimos minus excepturi
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-recipes">
+        <div class="recipes-box">
+          <div class="text-box">
+            <h1 class="header-primary prim-line">Search for your next meal</h1>
+            <p class="header-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt aut
+              dolorem quis quod molestiae eius corporis. Voluptate debitis
+              atque, vero sequi hic error odit aperiam aliquam omnis ipsa libero
+              harum?
+            </p>
+            <a href="#" class="btn-info">More Info</a>
+          </div>
+          <div class="image-box">
+            <img
+              class="about-img"
+              src="./images/food-menu.jpg"
+              alt="Girl eating"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-search">
+        <h3 class="heading-tertiary">What to make today?</h3>
+        <div class="search-box">
+          <label>Search recipes</label>
+          <input placeholder="Find new reicpes" />
         </div>
       </section>
     </main>
+    <script src="bmi.js"></script>
   </body>
 </html>
