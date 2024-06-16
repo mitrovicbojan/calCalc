@@ -50,6 +50,7 @@ teal2
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -155,7 +156,7 @@ input {
   padding: 1.5rem 2rem;
   border-radius: 9px;
   background-color: rgba(255, 255, 255, 0.5);
-  border: none;
+  border: 1px solid transparent;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
@@ -270,5 +271,31 @@ input:focus {
   background-color: hsla(227, 100%, 50%, 0.6);
   border-radius: 1rem;
   color: #ffffff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.section-search {
+  padding: 10rem 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 55, 255, 0.02);
+}
+
+.search-box {
+  margin-top: 5rem;
+}
+
+.search-button {
+  margin-left: 5rem;
+  padding: 1.5rem 2rem;
+  background-color: hsla(227, 100%, 50%, 0.6);
+  border-radius: 1rem;
+  color: #ffffff;
+  font-size: 1.6rem;
+
+  display: inline-block;
+  text-decoration: none;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
