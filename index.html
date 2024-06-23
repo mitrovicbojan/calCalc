@@ -42,6 +42,7 @@
                   id="weight"
                   class="weight-input"
                   placeholder="kg"
+                  required
                 />
               </div>
               <div class="group-form">
@@ -51,6 +52,7 @@
                   id="height"
                   class="weight-input"
                   placeholder="cm"
+                  required
                 />
               </div>
             </div>
@@ -58,6 +60,7 @@
               Calculate
             </button>
             <p id="bmi-result" class="bmi-result"></p>
+            <p id="bmi-range" class="bmi-range"></p>
           </form>
         </div>
       </section>
@@ -145,13 +148,83 @@
         </div>
       </section>
       <section class="section-search">
-        <h3 class="heading-tertiary">What is your next meal?</h3>
+        <h2 class="header-secondary">What is your next meal?</h2>
         <div class="search-box">
-          <input placeholder="Find new reicpes" />
-          <a href="#" class="search-button">Search</a>
+          <input class="ingridients-search" placeholder="Enter ingridients" />
+          <a href="##" id="search-button" class="search-button">Search</a>
+        </div>
+
+        <div class="ingridients-items">
+          <p class="ingridients-title">Most wanted ingridients:</p>
+          <a href="##" class="ingridient-btn">Chicken</a>
+          <a href="##" class="ingridient-btn">Eggs</a>
+          <a href="##" class="ingridient-btn">Pork</a>
+          <a href="##" class="ingridient-btn">Chicken</a>
+          <a href="##" class="ingridient-btn">Eggs</a>
+          <a href="##" class="ingridient-btn">Pork</a>
+          <a href="##" class="ingridient-btn">Chicken</a>
+          <a href="##" class="ingridient-btn">Eggs</a>
+        </div>
+        <div class="meal-box" id="meal-box">
+          <!-- <div class="meal-item">
+            <div class="meal-item-img">
+              <img
+                class="meal-img"
+                src="./images/food-menu.jpg"
+                alt="Image of food"
+              />
+            </div>
+            <h3 class="heading-tertiary meal-title">SUPER FOOD</h3>
+            <a href="##" class="recipe-btn">See recipe</a>
+          </div>
+          <div class="meal-item">
+            <div class="meal-item-img">
+              <img
+                class="meal-img"
+                src="./images/food-menu.jpg"
+                alt="Image of food"
+              />
+            </div>
+            <h3 class="heading-tertiary meal-title">SUPER FOOD</h3>
+            <a href="##" class="recipe-btn">See recipe</a>
+          </div>
+          <div class="meal-item">
+            <div class="meal-item-img">
+              <img
+                class="meal-img"
+                src="./images/food-menu.jpg"
+                alt="Image of food"
+              />
+            </div>
+            <h3 class="heading-tertiary meal-title">SUPER FOOD</h3>
+            <a href="##" class="recipe-btn">See recipe</a>
+          </div>
+          <div class="meal-item">
+            <div class="meal-item-img">
+              <img
+                class="meal-img"
+                src="./images/food-menu.jpg"
+                alt="Image of food"
+              />
+            </div>
+            <h3 class="heading-tertiary meal-title">SUPER FOOD</h3>
+            <a href="##" class="recipe-btn">See recipe</a>
+          </div>
+          <div class="meal-item">
+            <div class="meal-item-img">
+              <img
+                class="meal-img"
+                src="./images/food-menu.jpg"
+                alt="Image of food"
+              />
+            </div>
+            <h3 class="heading-tertiary meal-title">SUPER FOOD</h3>
+            <a href="##" class="recipe-btn">See recipe</a>
+          </div> -->
         </div>
       </section>
     </main>
     <script src="bmi.js"></script>
+    <script src="search.js"></script>
   </body>
 </html>

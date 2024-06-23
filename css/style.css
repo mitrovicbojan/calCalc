@@ -101,6 +101,10 @@ body {
   color: #212529;
 }
 
+.header-secondary {
+  font-size: 4.8rem;
+}
+
 .prim-line {
   background-image: url(../images/llline.svg);
   background-repeat: no-repeat;
@@ -182,6 +186,13 @@ input:focus {
 .bmi-result {
   margin-top: 3rem;
   font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.bmi-range {
+  font-size: 1.8rem;
+  color: #eee;
+  font-weight: 300;
 }
 /*****ABOUT*/
 
@@ -285,10 +296,19 @@ input:focus {
 
 .search-box {
   margin-top: 5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  /* border: 2px solid red; */
+  width: 100%;
+  justify-content: center;
+}
+
+.ingridients-search {
+  width: 40rem;
 }
 
 .search-button {
-  margin-left: 5rem;
+  margin-left: 1rem;
   padding: 1.5rem 2rem;
   background-color: hsla(227, 100%, 50%, 0.6);
   border-radius: 1rem;
@@ -298,4 +318,66 @@ input:focus {
   display: inline-block;
   text-decoration: none;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.ingridients-items {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  gap: 1rem;
+  width: 50rem;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  margin-bottom: 5rem;
+}
+
+.ingridients-title {
+  font-size: 1.8rem;
+  color: #495057;
+  font-weight: 400;
+  padding: 1.5rem 0;
+}
+
+.ingridient-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid #495057;
+  color: #495057;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 100px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.meal-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.meal-item {
+  text-align: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.meal-img {
+  width: 100%;
+}
+
+.meal-title {
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
+}
+
+.recipe-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  background-color: hsla(227, 100%, 50%, 0.6);
+  color: #ffffff;
 }
