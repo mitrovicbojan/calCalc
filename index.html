@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <title>calCalc</title>
   </head>
   <body>
@@ -22,7 +23,7 @@
       <section class="section-hero">
         <div class="container">
           <div class="text-box">
-            <h1 class="header-primary">Body Mass Index Calculator</h1>
+            <h1 class="header-primary-hero">Body Mass Index Calculator</h1>
             <p class="header-description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt aut
               dolorem quis quod molestiae eius corporis. Voluptate debitis
@@ -129,7 +130,9 @@
       <section class="section-recipes">
         <div class="recipes-box">
           <div class="text-box">
-            <h1 class="header-primary prim-line">Search for your next meal</h1>
+            <h1 class="header-primary prim-line">
+              Search for your next amazing meal
+            </h1>
             <p class="header-description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt aut
               dolorem quis quod molestiae eius corporis. Voluptate debitis
@@ -150,7 +153,11 @@
       <section class="section-search">
         <h2 class="header-secondary">What is your next meal?</h2>
         <div class="search-box">
-          <input class="ingridients-search" placeholder="Enter ingridients" />
+          <input
+            class="ingridients-search"
+            id="ingridients-search"
+            placeholder="Enter ingridients"
+          />
           <a href="##" id="search-button" class="search-button">Search</a>
         </div>
 
@@ -221,6 +228,46 @@
             <h3 class="heading-tertiary meal-title">SUPER FOOD</h3>
             <a href="##" class="recipe-btn">See recipe</a>
           </div> -->
+        </div>
+        <div class="recipe-details" id="recipe-details">
+          <button
+            onclick="closeModal()"
+            class="recipe-close-btn"
+            id="recipe-close-btn"
+          >
+            <i class="fas fa-times">X</i>
+          </button>
+          <div class="recipe-details-box" id="recipe-details-box">
+            <!-- <h2 class="recipe-title">NAME</h2>
+            <p class="recipe-category">Category</p>
+            <div class="instructions">
+              <h3 class="instructions-title">Instructions</h3>
+              <p class="recipe-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                rem voluptatum unde exercitationem necessitatibus rerum sit nemo
+                porro labore laboriosam. Earum possimus ipsa beatae hic
+                dignissimos, amet molestias exercitationem temporibus. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Totam rem
+                voluptatum unde exercitationem necessitatibus rerum sit nemo
+                porro labore laboriosam. Earum possimus ipsa beatae hic
+                dignissimos, amet molestias exercitationem temporibus. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Totam rem
+                voluptatum unde exercitationem necessitatibus rerum sit nemo
+                porro labore laboriosam. Earum possimus ipsa beatae hic
+                dignissimos, amet molestias exercitationem temporibus.
+              </p>
+            </div>
+            <div class="recipe-image">
+              <img
+                class="recipe-details-img"
+                src="./images/food-menu.jpg"
+                alt="food"
+              />
+            </div>
+            <div class="recipe-video">
+              <a href="##" class="video-link">Watch Video</a>
+            </div> -->
+          </div>
         </div>
       </section>
     </main>

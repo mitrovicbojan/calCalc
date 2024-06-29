@@ -69,11 +69,13 @@ function handleErr() {
   bmiRes.style.color = "#c92a2a";
 }
 
-//display result
+//display result on click
 btnBmi.addEventListener("click", function () {
   if (checkInt(weightVal) && checkInt(heightVal)) {
     clearError();
     caclBmi();
+    weight.value = "";
+    height.value = "";
   } else {
     handleErr();
   }
