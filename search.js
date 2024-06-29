@@ -54,8 +54,8 @@ function recipeInstruction(meal) {
   console.log(meal);
   meal = meal[0];
   let html = `  
-            <h2 class="recipe-title">${meal.strMeal}</h2>
             <p class="recipe-category">${meal.strCategory}</p>
+            <h2 class="recipe-title">${meal.strMeal}</h2>            
             <div class="instructions">
               <h3 class="instructions-title">Instructions</h3>
               <p class="recipe-description">${meal.strInstructions}</p>

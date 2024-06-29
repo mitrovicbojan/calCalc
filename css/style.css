@@ -328,6 +328,10 @@ input:focus {
   margin-bottom: 5rem;
 }
 
+.icon-close {
+  font-weight: 400;
+}
+
 .ingridients-title {
   font-size: 1.8rem;
   color: #495057;
@@ -383,22 +387,28 @@ input:focus {
 
 .recipe-details {
   position: fixed;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background: #eee;
-  color: black;
-  width: 90%;
+  transform: translate(-50%, -50%) scale(0.1);
+  background: rgba(0, 0, 0, 0.9);
+  color: #eee;
+  /* width: 90%; */
   height: 90%;
-  overflow-y: none;
-  padding: 2rem 0;
-  text-align: center;
+  overflow-y: scroll;
+  padding: 3rem 5rem;
+  /* text-align: center; */
   border-radius: 1rem;
-  display: none;
+  /* display: none; */
+  visibility: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s, top 0.5s;
 }
 
 .openInstructions {
-  display: block;
+  /* display: block; */
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
 }
 .recipe-details-box {
   margin: 2rem;
@@ -424,6 +434,7 @@ input:focus {
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 2rem;
+  text-align: left;
 }
 
 .recipe-category {
@@ -435,17 +446,22 @@ input:focus {
   padding: 0.5rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
+  text-align: left;
 }
 
 .instructions-title {
+  display: inline-block;
   font-size: 1.8rem;
+  color: rebeccapurple;
   font-weight: 700;
   margin-bottom: 2rem;
 }
 
 .recipe-description {
+  display: inline-block;
   font-size: 1.8rem;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
+  text-align: left;
 }
 
 .recipe-image {
@@ -458,4 +474,9 @@ input:focus {
   display: block;
   margin: 0 auto;
   border-radius: 1rem;
+}
+
+.video-link {
+  text-decoration: none;
+  font-size: 2rem;
 }
