@@ -58,6 +58,12 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+li {
+  list-style: none;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
 /*********************/
 /*****HEADER**********/
 /*********************/
@@ -392,45 +398,51 @@ input:focus {
   transform: translate(-50%, -50%) scale(0.1);
   background: rgba(0, 0, 0, 0.9);
   color: #eee;
-  /* width: 90%; */
+  /* width: 80%; */
   height: 90%;
   overflow-y: scroll;
   padding: 3rem 5rem;
-  /* text-align: center; */
+  text-align: center;
   border-radius: 1rem;
-  /* display: none; */
+
   visibility: hidden;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transition: transform 0.5s, top 0.5s;
 }
 
+.recipe-details::-webkit-scrollbar {
+  width: 1rem;
+}
+
 .openInstructions {
-  /* display: block; */
   visibility: visible;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
 }
 .recipe-details-box {
   margin: 2rem;
+  text-align: left;
 }
 
 .recipe-close-btn {
   position: absolute;
   top: 2rem;
   right: 2rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   border: none;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 100px;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #eee;
+  background: transparent;
 }
 
 .recipe-title {
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 2rem;
@@ -443,12 +455,18 @@ input:focus {
   display: inline-block;
   font-size: 1.4rem;
   font-weight: 700;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
   text-align: left;
 }
-
+.instructions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
 .instructions-title {
   display: inline-block;
   font-size: 1.8rem;
@@ -457,10 +475,18 @@ input:focus {
   margin-bottom: 2rem;
 }
 
+.ingredient-box {
+  border-right: 1px solid #eee;
+  padding-right: 3rem;
+}
+.ingredient-list {
+  width: 15rem;
+}
+
 .recipe-description {
   display: inline-block;
-  font-size: 1.8rem;
-  padding: 3rem 0;
+  font-size: 1.6rem;
+  /* padding: 3rem 0; */
   text-align: left;
 }
 
@@ -469,14 +495,22 @@ input:focus {
 }
 
 .recipe-details-img {
-  width: 35rem;
+  width: 25rem;
 
   display: block;
   margin: 0 auto;
   border-radius: 1rem;
 }
 
+.recipe-video {
+  margin-top: 3rem;
+}
+
 .video-link {
   text-decoration: none;
   font-size: 2rem;
+  padding: 1rem;
+  color: #364fc7;
+  background-color: #eee;
+  border-radius: 1rem;
 }

@@ -124,6 +124,19 @@
   .section-search {
     padding: 10rem 10rem;
   }
+
+  .instructions {
+    flex-wrap: wrap;
+  }
+
+  .ingredient-box {
+    border-right: none;
+  }
+
+  .recipe-details {
+    width: 90%;
+    padding: 3rem 1rem;
+  }
 }
 /*750px*/
 @media only screen and (max-width: 46.87em) {
