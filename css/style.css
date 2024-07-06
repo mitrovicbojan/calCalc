@@ -51,11 +51,13 @@ teal2
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 li {
@@ -69,8 +71,12 @@ li {
 /*********************/
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   background-color: #eee;
-  padding: 0 12rem;
+  padding: 0 4.8rem;
 }
 
 .logo {
@@ -81,6 +87,78 @@ li {
 .logo-img {
   width: 100%;
   height: auto;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 1rem;
+  color: #212529;
+  cursor: pointer;
+  position: relative;
+  transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 1s;
+}
+
+.main-nav-link:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: #364fc7;
+  width: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 1s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: hsl(270, 73%, 53%);
+}
+
+.main-nav-link:hover::after {
+  width: 50%;
+  background: linear-gradient(0.25turn, #0037ff, #50e2c3, #8730df);
+}
+
+/*STICKY NAVBAR*/
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #212529;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 .container {
@@ -166,7 +244,7 @@ input {
   border-radius: 9px;
   background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid transparent;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 input:focus {
@@ -179,19 +257,47 @@ input:focus {
   padding: 1rem 3rem;
   border-radius: 9px;
   border: none;
-  background-color: hsla(227, 100%, 50%, 0.464);
+  background-image: linear-gradient(
+    to right,
+    #364fc7 0%,
+    #50e2c3 51%,
+    #364fc7 100%
+  );
+  background-size: 200% auto;
   color: #eee;
 
   font-size: 1.8rem;
 
   cursor: pointer;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+
+  transition: 0.5s;
+}
+
+.btn-cta:hover {
+  background-position: right center;
 }
 
 .bmi-result {
   margin-top: 3rem;
   font-size: 2.2rem;
   margin-bottom: 1rem;
+}
+
+.animated {
+  animation: slide-in 2s ease 0s 1 normal forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: scale(0.5);
+    transform-origin: 50% 100%;
+  }
+
+  100% {
+    transform: scale(1);
+    transform-origin: 50% 100%;
+  }
 }
 
 .bmi-range {

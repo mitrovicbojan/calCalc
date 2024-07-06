@@ -18,6 +18,18 @@
       <div class="logo">
         <img class="logo-img" src="./images/nnneon.svg" alt="Logo cloud" />
       </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#about">About</a></li>
+          <li><a class="main-nav-link" href="#recipes">Recipes</a></li>
+          <li><a class="main-nav-link" href="##">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
@@ -65,7 +77,7 @@
           </form>
         </div>
       </section>
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="about-box">
           <div class="image-box">
             <img
@@ -148,7 +160,7 @@
           </div>
         </div>
       </section>
-      <section class="section-search">
+      <section class="section-search" id="recipes">
         <h2 class="header-secondary">What is your next meal?</h2>
         <div class="search-box">
           <input
@@ -280,5 +292,10 @@
     </main>
     <script src="bmi.js"></script>
     <script src="search.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="mobilenav.js"></script>
   </body>
 </html>

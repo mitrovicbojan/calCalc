@@ -31,7 +31,7 @@ function checkInt(value) {
 //check BMI range
 function handleBmiRange(val) {
   let resultRange = Number(val);
-
+  bmiRange.classList.remove("animated");
   if (resultRange < 18.5) {
     bmiRange.innerText = "This is described as underweight.";
   }
@@ -51,6 +51,7 @@ function caclBmi() {
   let result = ((weightVal / (heightVal * heightVal)) * 10000).toFixed(2);
   handleBmiRange(result);
   bmiRes.innerHTML = `Your BMI is ${result}`;
+  bmiRes.classList.remove("animated");
 }
 
 //clear error style and message
@@ -76,6 +77,8 @@ btnBmi.addEventListener("click", function () {
     caclBmi();
     weight.value = "";
     height.value = "";
+    bmiRes.classList.add("animated");
+    bmiRange.classList.add("animated");
   } else {
     handleErr();
   }
