@@ -173,6 +173,7 @@
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
+    z-index: 1;
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
@@ -225,6 +226,10 @@
   .ingridients-items {
     width: 35rem;
   }
+
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
 }
 /*495PX*/
 @media only screen and (max-width: 46.87em) {
@@ -249,5 +254,8 @@
   .meal-box {
     grid-template-columns: 1fr;
     padding: 0 5rem;
+  }
+  .input-details {
+    flex-wrap: wrap;
   }
 }

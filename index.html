@@ -23,7 +23,7 @@
           <li><a class="main-nav-link" href="#">Home</a></li>
           <li><a class="main-nav-link" href="#about">About</a></li>
           <li><a class="main-nav-link" href="#recipes">Recipes</a></li>
-          <li><a class="main-nav-link" href="##">Contact</a></li>
+          <li><a class="main-nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -166,79 +166,23 @@
           <input
             class="ingridients-search"
             id="ingridients-search"
-            placeholder="Enter ingridients"
+            placeholder="Enter ingredient"
           />
-          <a href="##" id="search-button" class="search-button">Search</a>
+          <a href="#recipes" id="search-button" class="search-button">Search</a>
         </div>
 
         <div class="ingridients-items">
           <p class="ingridients-title">Most wanted ingridients:</p>
-          <a href="##" class="ingridient-btn">Chicken</a>
-          <a href="##" class="ingridient-btn">Eggs</a>
-          <a href="##" class="ingridient-btn">Pork</a>
-          <a href="##" class="ingridient-btn">Chicken</a>
-          <a href="##" class="ingridient-btn">Eggs</a>
-          <a href="##" class="ingridient-btn">Pork</a>
-          <a href="##" class="ingridient-btn">Chicken</a>
-          <a href="##" class="ingridient-btn">Eggs</a>
+          <a href="#" class="ingridient-btn">Chicken</a>
+          <a href="#" class="ingridient-btn">Eggs</a>
+          <a href="#" class="ingridient-btn">Pork</a>
+          <a href="#" class="ingridient-btn">Beef</a>
+          <a href="#" class="ingridient-btn">Sugar</a>
+          <a href="#" class="ingridient-btn">Orange</a>
+          <a href="#" class="ingridient-btn">Banana</a>
+          <a href="#" class="ingridient-btn">Olives</a>
         </div>
-        <div class="meal-box" id="meal-box">
-          <!-- <div class="meal-item">
-            <div class="meal-item-img">
-              <img
-                class="meal-img"
-                src="./images/food-menu.jpg"
-                alt="Image of food"
-              />
-            </div>
-            <h3 class="heading-tertiary meal-title">SUPER FOOD</h3>
-            <a href="##" class="recipe-btn">See recipe</a>
-          </div>
-          <div class="meal-item">
-            <div class="meal-item-img">
-              <img
-                class="meal-img"
-                src="./images/food-menu.jpg"
-                alt="Image of food"
-              />
-            </div>
-            <h3 class="heading-tertiary meal-title">SUPER FOOD</h3>
-            <a href="##" class="recipe-btn">See recipe</a>
-          </div>
-          <div class="meal-item">
-            <div class="meal-item-img">
-              <img
-                class="meal-img"
-                src="./images/food-menu.jpg"
-                alt="Image of food"
-              />
-            </div>
-            <h3 class="heading-tertiary meal-title">SUPER FOOD</h3>
-            <a href="##" class="recipe-btn">See recipe</a>
-          </div>
-          <div class="meal-item">
-            <div class="meal-item-img">
-              <img
-                class="meal-img"
-                src="./images/food-menu.jpg"
-                alt="Image of food"
-              />
-            </div>
-            <h3 class="heading-tertiary meal-title">SUPER FOOD</h3>
-            <a href="##" class="recipe-btn">See recipe</a>
-          </div>
-          <div class="meal-item">
-            <div class="meal-item-img">
-              <img
-                class="meal-img"
-                src="./images/food-menu.jpg"
-                alt="Image of food"
-              />
-            </div>
-            <h3 class="heading-tertiary meal-title">SUPER FOOD</h3>
-            <a href="##" class="recipe-btn">See recipe</a>
-          </div> -->
-        </div>
+        <div class="meal-box" id="meal-box"></div>
 
         <div class="recipe-details" id="recipe-details">
           <button
@@ -248,48 +192,89 @@
           >
             Close
           </button>
-          <div class="recipe-details-box" id="recipe-details-box">
-            <!-- <h2 class="recipe-title">NAME</h2>
-              <p class="recipe-category">Category</p>
-              <div class="instructions">
-                <h3 class="instructions-title">Instructions</h3>
-                <p class="recipe-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                  rem voluptatum unde exercitationem necessitatibus rerum sit nemo
-                  porro labore laboriosam. Earum possimus ipsa beatae hic
-                  dignissimos, amet molestias exercitationem temporibus. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Totam rem
-                  voluptatum unde exercitationem necessitatibus rerum sit nemo
-                  porro labore laboriosam. Earum possimus ipsa beatae hic
-                  dignissimos, amet molestias exercitationem temporibus. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Totam rem
-                  voluptatum unde exercitationem necessitatibus rerum sit nemo
-                  porro labore laboriosam. Earum possimus ipsa beatae hic
-                  dignissimos, amet molestias exercitationem temporibus.
-                </p>
-              </div>
-              <div class="recipe-image">
-                <img
-                  class="recipe-details-img"
-                  src="./images/food-menu.jpg"
-                  alt="food"
-                />
-              </div>
-              <div class="recipe-video">
-                <a href="##" class="video-link">Watch Video</a>
-              </div> -->
+          <div class="recipe-details-box" id="recipe-details-box"></div>
+        </div>
+      </section>
+      <section class="section-contact" id="contact">
+        <div class="contact-container">
+          <div class="contact-box">
+            <div class="contact-text-box">
+              <h2 class="contact-title">Get in touch</h2>
+              <p class="contact-text">
+                Contact our nutritionist for more details and tips about helathy
+                diet and recipes
+              </p>
+              <form class="cta-form" action="#">
+                <div class="input-details">
+                  <div class="input-name">
+                    <label for="full-name">Full Name</label>
+                    <input
+                      id="full-name"
+                      type="text"
+                      placeholder="John Smith"
+                      required
+                    />
+                  </div>
+                  <div class="input-email">
+                    <label for="email">Email address</label>
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="me@example.com"
+                      required
+                    />
+                  </div>
+                </div>
 
-            <!-- <div class="instructions">
-                <div class="ingredient-list"></div>
-                <h3 class="instructions-title">Instructions</h3>
-                <p class="recipe-description">${meal.strIngredient1}</p>
-                <p class="recipe-description">${meal.strIngredient20}</p>
-                <p class="recipe-description">${meal.strInstructions}</p>
-              </div> -->
+                <div class="input-text">
+                  <textarea
+                    class="msg-text"
+                    placeholder="Write your message"
+                  ></textarea>
+                </div>
+
+                <button class="btn btn--form">Send</button>
+              </form>
+            </div>
+            <div
+              class="contact-img-box"
+              role="img"
+              aria-label="Nutritionist enjoying food"
+            ></div>
           </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer-box">
+        <div class="logo">
+          <img class="logo-img" src="./images/nnneon.svg" alt="Logo cloud" />
+        </div>
+        <h2 class="header-footer">Follow us on:</h2>
+        <ul class="social-links">
+          <li>
+            <a href="#" class="social-link"
+              ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="social-link"
+              ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="social-link"
+              ><ion-icon class="social-icon" name="logo-youtube"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="social-link"
+              ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="bmi.js"></script>
     <script src="search.js"></script>
     <script
