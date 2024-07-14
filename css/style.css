@@ -473,7 +473,7 @@ input:focus {
 
 .ingridient-btn {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 0.8rem 2rem;
   border: 2px solid #495057;
   color: #495057;
   text-decoration: none;
@@ -482,11 +482,23 @@ input:focus {
   font-weight: 700;
   letter-spacing: 1px;
   cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.ingridient-btn:hover {
+  border: 2px solid hsla(227, 100%, 50%, 0.6);
+  color: hsla(227, 100%, 50%, 0.6);
 }
 .meal-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
+}
+
+.notFound {
+  font-size: 3rem;
+  grid-template-columns: 1fr;
+  color: #c92a2a;
 }
 
 .meal-item {

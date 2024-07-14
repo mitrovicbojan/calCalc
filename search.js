@@ -11,11 +11,16 @@ function getRecpies() {
     .value.trim();
   const url = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingridientSearchText}`;
   fetch(url)
-    .then((response) => response.json())
+    .then((response) => {
+      if (!response.ok) throw new Error("not a valid request");
+      return response.json();
+    })
     .then((data) => {
       let html = "";
-      data.meals.forEach((meal) => {
-        html += `
+      if (data.meals) {
+        mealList.classList.remove("notFound");
+        data.meals.forEach((meal) => {
+          html += `
           <div class="meal-item" data-id="${meal.idMeal}">
             <div class="meal-item-img">
               <img
@@ -28,8 +33,16 @@ function getRecpies() {
             <a href="##" class="recipe-btn">See recipe</a>
           </div>
           `;
-      });
+        });
+      } else {
+        html = "Sorry, no results were found!";
+        mealList.classList.add("notFound");
+      }
+
       mealList.innerHTML = html;
+    })
+    .catch((err) => {
+      console.log(err.message);
     });
 }
 
