@@ -1,45 +1,24 @@
 /*
-green
-hsl(167, 72%, 60%)
-
-blue
-hsl(227, 100%, 50%)
-
-light green
-hsl(162, 100%, 58%)
-
-purple
-hsl(270, 73%, 53%)
-
-red 9
-#c92a2a
-
-indigo blue
-#364fc7
-
-yellow 5
-#fcc419
-
-orange 5
-#ffa94d
-
-gray 9
-#212529
-
-gray 0
-#f8f9fa
-
-red2
-#ffe3e3
-
-orange2
-#ffe8cc
-
-teal2
-#c3fae8
-
 
 */
+
+:root {
+  --color-blue-main: hsl(227, 100%, 50%, 0.6);
+  --color-blue-indigo: #364fc7;
+  --color-red-main: #c92a2a;
+  --color-red-light: #ffe3e3;
+  --color-orange-light: #ffe8cc;
+  --color-purple: hsl(270, 73%, 53%);
+  --color-green-main: hsl(167, 72%, 60%);
+  --color-green-light: hsl(162, 100%, 58%);
+  --color-teal-light: #c3fae8;
+  --color-gray-dark: #212529;
+  --color-gray-light: #f8f9fa;
+  --color-white-main: #ffffff;
+  --color-yellow-5: #fcc419;
+  --color-orange-5: #ffa94d;
+}
+
 *,
 *::after,
 *::before {
@@ -201,7 +180,7 @@ li {
 }
 
 .form-box {
-  background-color: #ffffff;
+  background-color: var(--color-white-main);
   padding: 3rem 10rem;
   border-radius: 1rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -394,19 +373,19 @@ input:focus {
   display: inline-block;
   text-decoration: none;
   padding: 1.5rem 2rem;
-  background-color: hsla(227, 100%, 50%, 0.6);
+  background-color: var(--color-blue-main);
   border: 2px solid transparent;
   border-radius: 1rem;
-  color: #ffffff;
+  color: var(--color-white-main);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transition: 0.3s ease-in;
 }
 
 .btn-info:hover,
 .btn-info:active {
-  color: hsla(227, 100%, 50%, 0.6);
+  color: var(--color-blue-main);
   background-color: transparent;
-  border: 2px solid hsla(227, 100%, 50%, 0.6);
+  border: 2px solid var(--color-blue-main);
 }
 
 .section-search {
@@ -433,10 +412,10 @@ input:focus {
 .search-button:visited {
   margin-left: 1rem;
   padding: 1.5rem 2rem;
-  background-color: hsla(227, 100%, 50%, 0.6);
+  background-color: var(--color-blue-main);
   border: 2px solid transparent;
   border-radius: 1rem;
-  color: #ffffff;
+  color: var(--color-white-main);
   font-size: 1.6rem;
   display: inline-block;
   text-decoration: none;
@@ -446,9 +425,9 @@ input:focus {
 
 .search-button:hover,
 .search-button:active {
-  color: hsla(227, 100%, 50%, 0.6);
+  color: var(--color-blue-main);
   background-color: transparent;
-  border: 2px solid hsla(227, 100%, 50%, 0.6);
+  border: 2px solid var(--color-blue-main);
 }
 
 .ingridients-items {
@@ -486,8 +465,8 @@ input:focus {
 }
 
 .ingridient-btn:hover {
-  border: 2px solid hsla(227, 100%, 50%, 0.6);
-  color: hsla(227, 100%, 50%, 0.6);
+  border: 2px solid var(--color-blue-main);
+  color: var(--color-blue-main);
 }
 .meal-box {
   display: grid;
@@ -524,16 +503,16 @@ input:focus {
   margin-bottom: 3rem;
   border: 2px solid transparent;
   border-radius: 1rem;
-  background-color: hsla(227, 100%, 50%, 0.6);
-  color: #ffffff;
+  background-color: var(--color-blue-main);
+  color: var(--color-white-main);
   transition: 0.3s ease-in;
 }
 
 .recipe-btn:hover,
 .recipe-btn:active {
-  color: hsla(227, 100%, 50%, 0.6);
-  background-color: #ffffff;
-  border: 2px solid hsla(227, 100%, 50%, 0.6);
+  color: var(--color-blue-main);
+  background-color: var(--color-white-main);
+  border: 2px solid var(--color-blue-main);
 }
 
 /***************/
@@ -599,7 +578,7 @@ input:focus {
 }
 
 .recipe-category {
-  background: #ffffff;
+  background: var(--color-white-main);
   color: #364fc7;
   display: inline-block;
   font-size: 1.4rem;
@@ -619,7 +598,7 @@ input:focus {
 .instructions-title {
   display: inline-block;
   font-size: 1.8rem;
-  color: rebeccapurple;
+  color: var(--color-purple);
   font-weight: 700;
   margin-bottom: 2rem;
 }
@@ -762,7 +741,7 @@ input:focus {
   width: 10rem;
   padding: 1rem 0;
   border: 2px solid transparent;
-  background: hsla(227, 100%, 50%, 0.6);
+  background: var(--color-blue-main);
   color: #eee;
   border-radius: 1rem;
   cursor: pointer;
@@ -772,8 +751,8 @@ input:focus {
 
 .btn--form:hover {
   background: #eee;
-  color: hsla(227, 100%, 50%, 0.6);
-  border: 2px solid hsla(227, 100%, 50%, 0.6);
+  color: var(--color-blue-main);
+  border: 2px solid var(--color-blue-main);
 }
 .cta-form label {
   display: block;
@@ -831,12 +810,12 @@ input:focus {
 .social-icon {
   width: 3.4rem;
   height: 3.4rem;
-  color: hsla(227, 100%, 50%, 0.6);
+  color: var(--color-blue-main);
   transition: 0.5s;
 }
 
 .social-link:link,
 .social-icon:hover {
   transform: rotateY(360deg);
-  color: hsl(270, 73%, 53%);
+  color: var(--color-purple);
 }
