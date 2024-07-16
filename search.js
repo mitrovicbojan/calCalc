@@ -49,6 +49,12 @@ function getRecpies() {
 function closeModal() {
   mealDispaly.parentElement.classList.remove("openInstructions");
 }
+//close modal on click outside (needs fixing)
+document.addEventListener("click", (e) => {
+  if (!mealDispaly.contains(e.target)) {
+    mealDispaly.parentElement.classList.remove("openInstructions");
+  }
+});
 
 function getInstructions(e) {
   e.preventDefault();
