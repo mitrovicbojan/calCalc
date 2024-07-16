@@ -5,6 +5,13 @@ btnNavEl.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
 });
 
+//close mobile navbar if clicked outside
+document.addEventListener("click", (e) => {
+  if (!headerEl.contains(e.target) && e.target !== btnNavEl) {
+    headerEl.classList.remove("nav-open");
+  }
+});
+
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach((link) => {
