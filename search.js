@@ -5,6 +5,7 @@ const mealDispaly = document.getElementById("recipe-details-box");
 btnSearch.addEventListener("click", getRecpies);
 
 mealList.addEventListener("click", getInstructions);
+
 function getRecpies() {
   let ingridientSearchText = document
     .getElementById("ingridients-search")
@@ -64,8 +65,14 @@ function getInstructions(e) {
     fetch(
       `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`
     )
-      .then((response) => response.json())
-      .then((data) => recipeInstruction(data.meals));
+      .then((response) => {
+        if (!response.ok) throw new Error("not a valid request");
+        return response.json();
+      })
+      .then((data) => recipeInstruction(data.meals))
+      .catch((err) => {
+        console.log(err.message);
+      });
   }
 }
 
