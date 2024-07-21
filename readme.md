@@ -1,5 +1,7 @@
 ### BMI/Recipes
 
+Calculate your BMI and find new recipes.
+
 ### Screenshot
 
 ![](./images/screenshot.png)
@@ -15,4 +17,4 @@
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://ur-bmi.netlify.app/)
+- Live Site URL: [Click Here](https://ur-bmi.netlify.app/)
