@@ -167,6 +167,8 @@ li {
 
 .header-secondary {
   font-size: 4.8rem;
+  font-weight: 700;
+  color: var(--color-gray-dark);
 }
 
 .prim-line {
@@ -190,10 +192,11 @@ li {
 
 .form-title {
   margin-bottom: 3rem;
-  color: var(--color-gray-dark);
 }
 .title {
   font-size: 2.8rem;
+  color: var(--color-gray-dark);
+  font-weight: 400;
 }
 
 .inputs {
@@ -282,8 +285,8 @@ input:focus {
 
 .bmi-range {
   font-size: 1.8rem;
-  color: #ada8a8;
-  font-weight: 300;
+  color: var(--color-tuna);
+  font-weight: 400;
 }
 
 /*************/
@@ -340,20 +343,20 @@ input:focus {
 }
 
 .food-icon {
-  background-color: #ffe3e3;
+  background-color: var(--color-red-light);
 }
 
 .dumbbell-icon {
-  background-color: #ffe8cc;
+  background-color: var(--color-orange-light);
 }
 
 .sleep-icon {
-  background-color: #c3fae8;
+  background-color: var(--color-teal-light);
 }
 
 .heading-tertiary {
   font-size: 2.2rem;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 2rem;
 }
 
@@ -407,7 +410,7 @@ input:focus {
   justify-content: center;
 }
 
-.ingridients-search {
+.ingredients-search {
   width: 40rem;
 }
 .search-button:link,
@@ -432,7 +435,7 @@ input:focus {
   border: 2px solid var(--color-blue-main);
 }
 
-.ingridients-items {
+.ingredients-items {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -445,14 +448,14 @@ input:focus {
   font-weight: 400;
 }
 
-.ingridients-title {
+.ingredients-title {
   font-size: 1.8rem;
   color: var(--color-tuna);
   font-weight: 400;
   padding: 1.5rem 0;
 }
 
-.ingridient-btn {
+.ingredient-btn {
   display: inline-block;
   padding: 0.8rem 2rem;
   border: 2px solid var(--color-tuna);
@@ -466,7 +469,7 @@ input:focus {
   transition: all 0.2s ease-in;
 }
 
-.ingridient-btn:hover {
+.ingredient-btn:hover {
   border: 2px solid var(--color-blue-main);
   color: var(--color-blue-main);
 }
@@ -636,13 +639,21 @@ input:focus {
   margin-top: 3rem;
 }
 
-.video-link {
+.video-link:link,
+.video-link:visited {
   text-decoration: none;
   font-size: 2rem;
   padding: 1rem;
   color: var(--color-blue-indigo);
   background-color: var(--color-whisper);
   border-radius: 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.video-link:hover,
+.video-link:active {
+  color: var(--color-whisper);
+  background-color: var(--color-blue-indigo);
 }
 
 /*****************/

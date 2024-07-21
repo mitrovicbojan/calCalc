@@ -2,15 +2,22 @@ const btnSearch = document.getElementById("search-button");
 const mealList = document.getElementById("meal-box");
 const recipeModal = document.querySelector("recipe-details");
 const mealDispaly = document.getElementById("recipe-details-box");
-btnSearch.addEventListener("click", getRecpies);
+const ingredientBtn = document.querySelectorAll(".ingredient-btn");
+let searchText = document.getElementById("ingredients-search");
+
+ingredientBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    return (searchText.value = btn.innerText);
+  });
+});
+
+btnSearch.addEventListener("click", getRecipes);
 
 mealList.addEventListener("click", getInstructions);
 
-function getRecpies() {
-  let ingridientSearchText = document
-    .getElementById("ingridients-search")
-    .value.trim();
-  const url = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingridientSearchText}`;
+function getRecipes() {
+  let ingredientSearchText = searchText.value.trim();
+  const url = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredientSearchText}`;
   fetch(url)
     .then((response) => {
       if (!response.ok) throw new Error("not a valid request");
